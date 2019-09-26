@@ -3,7 +3,6 @@ using System.Collections;
 
 public class KeyboardCarController : CarController {
 
-    public KeyboardCarController() {
-        controller = new KeyboardCarInputController();
+    public KeyboardCarController() : base(new KeyboardCarInputController()) {
     }
 }

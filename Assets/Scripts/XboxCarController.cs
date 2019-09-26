@@ -3,7 +3,6 @@ using System.Collections;
 
 public class XboxCarController : CarController {
 
-    public XboxCarController() {
-        controller = new XboxCarInputController();
+    public XboxCarController() : base(new XboxCarInputController()){
     }
 }
